@@ -1,0 +1,15 @@
+<mat-card class={{card.color}}>
+  <mat-card-content>
+    <img class="header-icon" mat-card-image src="./assets/{{card.image}}" alt="icon">
+  </mat-card-content>
+  <mat-card-header>
+    <mat-card-title>{{card.header}}</mat-card-title>
+    <img class="ellipsis-icon" mat-card-image src="./assets/icon-ellipsis.svg" alt="icon">
+    <mat-card-subtitle *ngIf="timeMode === 'daily'" class="current-time">{{card.currentDailyHours}}hrs</mat-card-subtitle>
+    <mat-card-subtitle *ngIf="timeMode === 'daily'"class="previous-time">Last day - {{card.previousDailyHours}}hrs</mat-card-subtitle>
+    <mat-card-subtitle *ngIf="timeMode === 'weekly'" class="current-time">{{card.currentWeeklyHours}}hrs</mat-card-subtitle>
+    <mat-card-subtitle *ngIf="timeMode === 'weekly'"class="previous-time">Last week - {{card.previousWeeklyHours}}hrs</mat-card-subtitle>
+    <mat-card-subtitle *ngIf="timeMode === 'monthly'" class="current-time">{{card.currentMonthlyHours}}hrs</mat-card-subtitle>
+    <mat-card-subtitle *ngIf="timeMode === 'monthly'"class="previous-time">Last month - {{card.previousMonthlyHours}}hrs</mat-card-subtitle>
+  </mat-card-header>
+</mat-card>

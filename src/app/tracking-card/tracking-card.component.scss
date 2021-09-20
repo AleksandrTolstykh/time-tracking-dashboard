@@ -1,0 +1,121 @@
+.header-icon {
+  margin: 0 15px;
+}
+
+.ellipsis-icon {
+  position: absolute;
+  height: 5px;
+  width: 21px;
+  top: 60px;
+  right: 40px;
+}
+
+.mat-card {
+  border-radius: 15px;
+  font-family: "Rubik";
+  padding: 0 0 20px 0;
+  width: 350px;
+  height: 125px;
+  @media screen and (min-width: 768px) {
+    width: 200px;
+  }
+}
+
+.mat-card-header {
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 15px;
+  &:hover {
+    background-color: hsl(235, 45%, 61%);
+    cursor: pointer;
+  }
+}
+
+.mat-card-content {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  text-align: right;
+  height: 20px;
+}
+
+.mat-card-title {
+  color: white;
+  font-weight: 500;
+  margin-top: 15px;
+}
+
+.current-time {
+  color: white;
+  font-weight: 400;
+  font-size: 60px;
+}
+
+.previous-time {
+  color: hsl(236, 100%, 87%);
+  font-weight: 400;
+}
+
+.orange.mat-card {
+  background: linear-gradient(0deg, hsl(235, 46%, 20%) 50%, hsl(15, 100%, 70%) 50%);
+  .mat-card-content {
+    background-color: hsl(15, 100%, 70%);
+  }
+  .header-icon {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+.cyan.mat-card {
+  background: linear-gradient(0deg, hsl(235, 46%, 20%) 50%, hsl(195, 74%, 62%) 50%);
+  .mat-card-content {
+    background-color: hsl(195, 74%, 62%);
+  }
+  .header-icon {
+    height: 38px;
+    width: 38px;
+  }
+}
+
+.red.mat-card {
+  background: linear-gradient(0deg, hsl(235, 46%, 20%) 50%, hsl(348, 100%, 68%) 50%);
+  .mat-card-content {
+    background-color: hsl(348, 100%, 68%);
+  }
+  .header-icon {
+    height: 39px;
+    width: 39px;
+  }
+}
+
+.green.mat-card {
+  background: linear-gradient(0deg, hsl(235, 46%, 20%) 50%, hsl(145, 58%, 55%) 50%);
+  .mat-card-content {
+    background-color: hsl(145, 58%, 55%);
+  }
+  .header-icon {
+    height: 28px;
+    width: 40px;
+  }
+}
+
+.purple.mat-card {
+  background: linear-gradient(0deg, hsl(235, 46%, 20%) 50%, hsl(264, 64%, 52%) 50%);
+  .mat-card-content {
+    background-color: hsl(264, 64%, 52%);
+  }
+  .header-icon {
+    height: 50px;
+    width: 37px;
+  }
+}
+
+.yellow.mat-card {
+  background: linear-gradient(0deg, hsl(235, 46%, 20%) 50%, hsl(43, 84%, 65%) 50%);
+  .mat-card-content {
+    background-color: hsl(43, 84%, 65%);
+  }
+  .header-icon {
+    height: 34px;
+    width: 34px;
+  }
+}

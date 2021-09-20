@@ -1,0 +1,17 @@
+mat-grid-list {
+  @media screen and (min-width: 768px) {
+    margin-top: 5%;
+  }
+
+  @media screen and (min-width: 1024px) {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+  }
+}
+
+app-main-card, app-tracking-card {
+  @media screen and (min-width: 768px) {
+    height: 100%;
+  }
+}
